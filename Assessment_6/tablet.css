@@ -1,0 +1,171 @@
+@media screen and (min-width: 480px) and (max-width: 990px) {
+    body {
+      background: url(des.jpg);
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-attachment: fixed;
+    }
+  
+    .container {
+      display: grid;
+      grid-template: repeat(5, auto) / auto;
+      grid-template-areas:
+        "header"
+        "about"
+        "card-one"
+        "card-two"
+        "card-three"
+        "card-four";
+  
+      gap: 1rem;
+      align-items: center;
+    }
+    .navbar {
+        display: flex;
+        align-items: center;
+        margin-top: 2rem;
+      }
+    .box-one {
+      grid-area: header;
+    }
+  
+    .box-two {
+      grid-area: about;
+      padding: 0 2rem;
+    }
+  
+    .card-one {
+      grid-area: card-one;
+    }
+  
+    .card-two {
+      grid-area: card-two;
+    }
+  
+    .card-three {
+      grid-area: card-three;
+    }
+  
+    .card-four {
+      grid-area: card-four;
+    }
+  
+    ul {
+      display: inline;
+    }
+  
+    .logo img {
+      width: 5rem;
+      height: 5rem;
+      margin-left: 1rem;
+      padding-left: 1rem;
+    }
+  
+    .links {
+      display: inline-flex;
+      align-items: center;
+      margin-right: 0.5rem;
+      position: absolute;
+      right: 0;
+    }
+    .links ul {
+      color: white;
+    }
+    ul li {
+      display: inline;
+      padding-right: 1rem;
+    }
+    .links img {
+      width: 3rem;
+      height: 3rem;
+      padding-left: 1rem;
+      padding-right: 1rem;
+    }
+  
+    h1 {
+      color: white;
+      margin: 0;
+      font-weight: 700;
+      font-size: 6rem;
+    }
+    h1:hover{
+        color: yellowgreen;
+    }
+    p {
+      color: white;
+      margin: 0;
+      font-size: 2rem;
+    }
+  
+    button {
+      background: white;
+      border: none;
+      font-size: 1rem;
+      font-weight: 600;
+      font-family: "Times New Roman", Times, serif;
+      padding: 1rem 4rem;
+      border-radius: 30px;
+    }
+    button:hover{
+      background: blue;
+      color: white;
+      border: 2px solid red;    
+    }
+  
+    .box-three {
+      display: grid;
+      grid-template: repeat(4, auto) / auto;
+      grid-template-areas: "card-one" "card-two" "card-three" "card-four";
+      gap: 1.5rem 2rem;
+      justify-content: stretch;
+      position: relative;
+    }
+  
+    .card {
+      width: auto;
+      height: 25rem;
+      border-radius: 15px;
+      background-repeat: no-repeat;
+      background-size: cover;
+      filter: brightness(80%);
+      transition: transform 250ms;
+    }
+  
+    .text {
+      color: white;
+    }
+  
+    .card:hover {
+      transform: translateY(-15px);
+    }
+  
+    .card-one {
+      background-image: url(img1.jpg);
+      border-radius: 15px;
+    }
+  
+    .card-two {
+      background-image: url(img2.jpg);
+      border-radius: 15px;
+    }
+    .card-three {
+      background-image: url(img3.jpg);
+      border-radius: 15px;
+    }
+    .card-four {
+      background-image: url(img4.jpg);
+      border-radius: 15px;
+    }
+  
+  
+    h3 {
+      padding-left: 2rem;
+      margin-bottom: 0;
+      font-size: 3rem;
+    }
+  
+    .text p {
+      padding-left: 2rem;
+    }
+  }
+  
